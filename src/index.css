@@ -95,6 +95,7 @@ h1, h2, h3 {
   margin-bottom: 1.5rem;
   background: linear-gradient(to right, #fff, #94a3b8);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -219,18 +220,67 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 968px) {
-  .hero {
-    flex-direction: column;
-    padding-top: 120px;
-    height: auto;
-    text-align: center;
-  }
+@media (max-width: 1024px) {
   .hero-content h1 {
     font-size: 3.5rem;
   }
-  .hero-image img {
-    margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 5%;
+  }
+  
+  .nav-links {
+    display: none; /* Simple approach: hide links on mobile for now, or could add a toggle */
+  }
+  
+  .hero {
+    flex-direction: column-reverse; /* Put image on top for better mobile flow */
+    padding-top: 100px;
+    height: auto;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  
+  .hero-content {
     max-width: 100%;
+    margin-top: 2rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+  
+  .hero-image img {
+    max-width: 90%;
+    margin-top: 0;
+  }
+  
+  .section-head h2 {
+    font-size: 2.5rem;
+  }
+  
+  .dish-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  footer {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .logo {
+    font-size: 1.4rem;
+  }
+  .btn-primary {
+    padding: 0.8rem 1.8rem;
+    width: 100%;
   }
 }

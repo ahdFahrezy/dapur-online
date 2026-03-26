@@ -4,22 +4,22 @@ function App() {
   const dishes = [
     {
       id: 1,
-      title: "Wagyu Beef Rendang",
-      desc: "Slow-cooked for 12 hours in premium coconut milk and traditional spices.",
+      title: "Rendang Sapi Wagyu",
+      desc: "Dimasak perlahan selama 12 jam dengan santan premium dan rempah tradisional.",
       price: "Rp 125.000",
       img: "/assets/dish_1.png"
     },
     {
       id: 2,
-      title: "Sate Lilit Balinese",
-      desc: "Authentic minced meat satay grilled over lemongrass sticks with Sambal Matah.",
+      title: "Sate Lilit Bali",
+      desc: "Sate daging cincang otentik yang dipanggang dengan batang serai dan Sambal Matah.",
       price: "Rp 85.000",
       img: "/assets/dish_2.png"
     },
     {
       id: 3,
-      title: "Artisan Es Teller",
-      desc: "Modern fusion of tropical fruits, creamy coconut, and premium condensed milk.",
+      title: "Es Teler Artisan",
+      desc: "Perpaduan modern buah tropis, kelapa muda, dan susu kental manis premium.",
       price: "Rp 45.000",
       img: "/assets/dish_3.png"
     }
@@ -30,29 +30,29 @@ function App() {
       <nav className="navbar">
         <div className="logo">Dapur Online</div>
         <ul className="nav-links">
-          <li><a href="#home">Home</a></li>
+          <li><a href="#home">Beranda</a></li>
           <li><a href="#menu">Menu</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#contact">Kontak</a></li>
         </ul>
-        <button className="btn-primary" style={{ padding: '0.6rem 1.5rem' }}>Order Now</button>
+        <button className="btn-primary" style={{ padding: '0.6rem 1.5rem' }}>Pesan Sekarang</button>
       </nav>
 
       <section id="home" className="hero">
         <div className="hero-content">
-          <h1>Experience Gourmet <span style={{ color: '#f59e0b' }}>Indonesian</span> Dining</h1>
-          <p>The finest traditional recipes reimagined with modern culinary techniques. Delivered fresh to your doorstep.</p>
-          <button className="btn-primary">Explore Menu</button>
+          <h1>Nikmati Hidangan <span style={{ color: '#f59e0b' }}>Indonesia</span> Mewah</h1>
+          <p>Resep tradisional terbaik yang dihadirkan kembali dengan teknik kuliner modern. Diantar segar ke depan pintu Anda.</p>
+          <button className="btn-primary">Jelajahi Menu</button>
         </div>
         <div className="hero-image">
-          <img src="/assets/hero_food.png" alt="Signature Nasi Goreng" />
+          <img src="/assets/hero_food.png" alt="Nasi Goreng Spesial" />
         </div>
       </section>
 
       <section id="menu" className="featured">
         <div className="section-head">
-          <h2>Chef's Recommendations</h2>
-          <p style={{ color: '#94a3b8' }}>Our signature dishes curated for the ultimate dining experience.</p>
+          <h2>Rekomendasi Chef</h2>
+          <p style={{ color: '#94a3b8' }}>Hidangan khas kami yang dikurasi untuk pengalaman makan terbaik.</p>
         </div>
         <div className="dish-grid">
           {dishes.map(dish => (
@@ -70,9 +70,9 @@ function App() {
 
       <footer>
         <div className="logo" style={{ fontSize: '1.2rem' }}>Dapur Online</div>
-        <div className="footer-text">&copy; 2026 Dapur Online. Gourmet delivered.</div>
+        <div className="footer-text">&copy; 2026 Dapur Online. Hidangan mewah diantar.</div>
         <div className="socials" style={{ color: '#94a3b8' }}>
-          Follow us: Instagram | Facebook | Twitter
+          Ikuti kami: Instagram | Facebook | Twitter
         </div>
       </footer>
     </div>
